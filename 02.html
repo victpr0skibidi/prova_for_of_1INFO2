@@ -11,13 +11,17 @@ Exiba a lista de e-mails válidos.
   const usuarioEmail= prompt(`insira seu email`);
 
   emails.push(usuarioEmail);
+   let emailsValidos= [];
 
   for(let validos of emails){
-    const posicao= validos.indexOf("@") +1;
-    if (posicao){
+    const posicao= validos.indexOf("@");
+    if (posicao!== -1){
+      emailsValidos.push(validos);
+
+
 
     }
-  }
+  }alert(emailsValidos);
 
 
 
